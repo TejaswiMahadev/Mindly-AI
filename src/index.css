@@ -20,6 +20,142 @@
     text-rendering: optimizeSpeed;
   }
 
+  /* MINDLY Layered Text Effect */
+  .mindly-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(4rem, 15vw, 10rem);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    position: relative;
+    display: inline-block;
+
+    /* Top layer - Yellow outline */
+    color: transparent;
+    -webkit-text-stroke: 3px #FFD700;
+    text-stroke: 3px #FFD700;
+
+    /* Create the layered cyan effect */
+    background: linear-gradient(180deg,
+      rgba(255, 215, 0, 0.3) 0%,
+      rgba(0, 255, 255, 0.8) 20%,
+      rgba(0, 200, 200, 0.9) 40%,
+      rgba(0, 150, 150, 1) 60%,
+      rgba(0, 100, 100, 1) 80%,
+      rgba(0, 50, 50, 1) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Multiple text shadows for depth and horizontal lines */
+    text-shadow:
+      0 1px 0 rgba(0, 255, 255, 0.9),
+      0 2px 0 rgba(0, 240, 240, 0.9),
+      0 3px 0 rgba(0, 220, 220, 0.9),
+      0 4px 0 rgba(0, 200, 200, 0.9),
+      0 5px 0 rgba(0, 180, 180, 0.9),
+      0 6px 0 rgba(0, 160, 160, 0.9),
+      0 7px 0 rgba(0, 140, 140, 0.9),
+      0 8px 0 rgba(0, 120, 120, 0.9),
+      0 9px 0 rgba(0, 100, 100, 0.9),
+      0 10px 0 rgba(0, 80, 80, 1),
+      0 11px 0 rgba(0, 60, 60, 1),
+      0 12px 0 rgba(0, 40, 40, 1),
+      0 15px 20px rgba(0, 0, 0, 0.3);
+
+    filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.3));
+  }
+
+  /* Get Started Button */
+  .get-started-button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    padding: 1.5rem 4rem;
+    background: linear-gradient(180deg, #FFD700 0%, #FFA500 100%);
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s ease;
+
+    /* Black border/shadow */
+    box-shadow:
+      0 0 0 4px #000,
+      0 8px 0 0 #000,
+      0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .get-started-button:hover {
+    transform: translateY(2px);
+    box-shadow:
+      0 0 0 4px #000,
+      0 6px 0 0 #000,
+      0 6px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .get-started-button:active {
+    transform: translateY(4px);
+    box-shadow:
+      0 0 0 4px #000,
+      0 4px 0 0 #000,
+      0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Grid Overlay on Top */
+  .grid-overlay {
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 39px,
+        rgba(0, 150, 255, 0.3) 39px,
+        rgba(0, 150, 255, 0.3) 40px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 39px,
+        rgba(0, 150, 255, 0.3) 39px,
+        rgba(0, 150, 255, 0.3) 40px
+      );
+    opacity: 0.4;
+  }
+
+  /* 3D Perspective Grid at Bottom */
+  .perspective-grid-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50vh;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 49px,
+        rgba(0, 200, 255, 0.6) 49px,
+        rgba(0, 200, 255, 0.6) 51px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 49px,
+        rgba(0, 200, 255, 0.6) 49px,
+        rgba(0, 200, 255, 0.6) 51px
+      );
+    transform: perspective(300px) rotateX(60deg);
+    transform-origin: center bottom;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+
+  /* Star Plus Shape */
+  .star-plus {
+    font-size: 1.5rem;
+    filter: drop-shadow(0 0 8px currentColor);
+  }
+
   /* 3D Pixel Text Effect */
   .pixel-3d-text {
     color: #FFD700;
