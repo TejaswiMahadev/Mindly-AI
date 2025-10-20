@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Press Start 2P', cursive;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background: #0066FF;
+  }
+}
+
+@layer utilities {
+  .pixel-text {
+    font-family: 'Press Start 2P', cursive;
+    text-rendering: optimizeSpeed;
+  }
+
+  /* 3D Pixel Text Effect */
+  .pixel-3d-text {
+    color: #FFD700;
+    text-shadow:
+      2px 0 0 #FFA500,
+      4px 0 0 #FF8C00,
+      0 2px 0 #00FFFF,
+      2px 2px 0 #00CED1,
+      4px 2px 0 #0088FF,
+      0 4px 0 #0D0047,
+      2px 4px 0 #0D0047,
+      4px 4px 0 #0D0047,
+      6px 4px 0 #0D0047,
+      0 6px 0 #000,
+      2px 6px 0 #000,
+      4px 6px 0 #000,
+      6px 6px 0 #000,
+      8px 6px 0 #000;
+  }
+
+  .text-outline-yellow {
+    text-shadow:
+      -2px -2px 0 #FFD700,
+      2px -2px 0 #FFD700,
+      -2px 2px 0 #FFD700,
+      2px 2px 0 #FFD700,
+      -4px 0 0 #000,
+      4px 0 0 #000,
+      0 -4px 0 #000,
+      0 4px 0 #000;
+  }
+
+  .text-outline-black {
+    text-shadow:
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000;
+  }
+
+  .text-outline-cyan {
+    text-shadow:
+      -1px -1px 0 #00FFFF,
+      1px -1px 0 #00FFFF,
+      -1px 1px 0 #00FFFF,
+      1px 1px 0 #00FFFF;
+  }
+
+  .pixel-border-thick {
+    box-shadow:
+      0 -4px 0 0 #000,
+      0 4px 0 0 #000,
+      -4px 0 0 0 #000,
+      4px 0 0 0 #000,
+      -4px -4px 0 0 #000,
+      4px -4px 0 0 #000,
+      -4px 4px 0 0 #000,
+      4px 4px 0 0 #000;
+  }
+
+  .pixel-shadow {
+    box-shadow: 8px 8px 0 0 #000;
+  }
+
+  /* 3D Perspective Grid */
+  .perspective-grid {
+    background-image:
+      linear-gradient(to bottom, transparent 0%, #0066FF 50%),
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 50px,
+        rgba(0, 255, 255, 0.2) 50px,
+        rgba(0, 255, 255, 0.2) 51px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 50px,
+        rgba(0, 255, 255, 0.2) 50px,
+        rgba(0, 255, 255, 0.2) 51px
+      );
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+    transform: perspective(500px) rotateX(60deg) scale(2);
+    transform-origin: center bottom;
+    opacity: 0.6;
+  }
+
+  .grid-background {
+    background-image:
+      linear-gradient(0deg, transparent 24%, rgba(0, 102, 255, .5) 25%, rgba(0, 102, 255, .5) 26%, transparent 27%, transparent 74%, rgba(0, 102, 255, .5) 75%, rgba(0, 102, 255, .5) 76%, transparent 77%, transparent),
+      linear-gradient(90deg, transparent 24%, rgba(0, 102, 255, .5) 25%, rgba(0, 102, 255, .5) 26%, transparent 27%, transparent 74%, rgba(0, 102, 255, .5) 75%, rgba(0, 102, 255, .5) 76%, transparent 77%, transparent);
+    background-size: 50px 50px;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+  }
+
+  @keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0.3; }
+  }
+
+  @keyframes bounce-pixel {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-8px) scale(1.02); }
+  }
+
+  @keyframes slide-up {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      filter: drop-shadow(0 0 4px #FFD700);
+      transform: scale(1);
+    }
+    50% {
+      filter: drop-shadow(0 0 12px #FFD700);
+      transform: scale(1.02);
+    }
+  }
+
+  @keyframes neon-flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+    75% { opacity: 1; }
+    80% { opacity: 0.9; }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-blink {
+    animation: blink 1.5s step-end infinite;
+  }
+
+  .animate-bounce-pixel {
+    animation: bounce-pixel 1s ease-in-out infinite;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-neon-flicker {
+    animation: neon-flicker 3s ease-in-out infinite;
+  }
+}
