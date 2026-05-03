@@ -3,7 +3,7 @@
 
 Mindly is an AI-powered peer-to-peer learning platform where people teach what they know and learn what they need through structured, accountable collaboration.
 
----
+
 
 ## 🚀 Overview
 
@@ -16,7 +16,7 @@ Instead of paying for courses or passively watching videos, users:
 - Collaborate through structured sessions  
 - Grow together with AI-guided support  
 
----
+
 
 ## 💡 Problem
 
@@ -28,7 +28,7 @@ Current learning platforms fall short:
 
 👉 **Result:** Low engagement, high drop-off, and limited real skill growth.
 
----
+
 
 ## ✨ Solution
 
@@ -38,7 +38,7 @@ Mindly introduces **structured peer learning with accountability**.
 
 > **Match → Contract → Learn → Track → Validate → Repeat**
 
----
+
 
 ## 🧩 Key Features
 
@@ -50,7 +50,7 @@ Matches users based on:
 
 👉 Focus on **mutual benefit**, not random pairing  
 
----
+
 
 ### 🎲 Skill Contracts *(Core USP)*
 
@@ -63,7 +63,6 @@ Matches users based on:
 
 👉 Ensures **commitment & accountability**  
 
----
 
 ### 📚 Structured Learning Sessions
 
@@ -71,7 +70,7 @@ Matches users based on:
 - Defined goals & outcomes  
 - Keeps learning focused and productive  
 
----
+
 
 ### 🤖 AI Learning Companion
 
@@ -84,7 +83,7 @@ Also:
 - Tracks learning progress  
 - Provides feedback & nudges  
 
----
+
 
 ### 📈 Progress Tracking
 
@@ -95,14 +94,14 @@ Tracks:
 
 👉 Makes learning **measurable**  
 
----
+
 
 ### ⭐ Peer Validation
 
 - Users endorse each other's skills  
 - Builds trust and credibility  
 
----
+
 
 ## 🏆 What Makes Mindly Different
 
@@ -115,7 +114,7 @@ Tracks:
 - ✅ AI-guided learning  
 - ✅ Real skill outcomes  
 
----
+
 
 ## 🛠️ Tech Stack (Planned)
 
@@ -136,7 +135,7 @@ Tracks:
 - Supabase Realtime  
 - WebRTC / Video APIs (for sessions)  
 
----
+
 
 ## 🧱 Architecture (High-Level)
 
@@ -147,7 +146,7 @@ Tracks:
 - Session Tracking + AI Notes  
 - Feedback & Validation Layer  
 
----
+
 
 ## 🎯 Vision
 
@@ -159,7 +158,7 @@ Mindly aims to build a global ecosystem where:
 - Learning is collaborative  
 - Growth is continuous  
 
----
+
 
 ## 🚧 Status
 
@@ -173,21 +172,20 @@ Mindly aims to build a global ecosystem where:
 - [ ] Session tracking  
 - [ ] AI learning assistant  
 
----
+
 
 ## 🤝 Contributing
 
 We welcome contributors!  
 If you're passionate about AI, education, or building impactful products — feel free to fork, raise issues, or submit PRs.
 
----
+
 
 ## 📬 Contact
 
 For collaborations, ideas, or feedback:  
-📧 *your-email-here*
+📧 *tejaswimahadev9@gmail.com*
 
----
 
 ## ⭐ Support
 
